@@ -1,0 +1,30 @@
+import random 
+
+crew_leaders = ['kruashvili', 'amiranashvili', 'tyeshelashvili', 'janezashvili', 'molodini', 'keserelidze', 'kurtanidze','arudashvili']
+winners = []
+while len(winners) < 3:
+    winner = random.choice(crew_leaders)
+    if winner not in winners:
+        winners.append(winner)
+        print(winner)
+
+crew_leaders.remove('arudashvili')
+print(crew_leaders)
+
+
+
+
+
+
+
+import random
+
+crew_members = ['nugzar turmanishvili', 'alex rajavi', 'anastasia', 'nika qatamadze', 'nikoloz takidze', 'roba amonashvili', 'vako', 'vefxvia babajanashvil']
+
+choice = random.choice(crew_members)
+choice2 = (choice + ' ' + 'studies good')
+choice3 = (choice + ' ' + 'is cool')
+if choice.endswith('i'):
+    print(choice3)
+else:
+    print(choice2)
